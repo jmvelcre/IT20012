@@ -1,13 +1,5 @@
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
 html, body {
+    width: auto;
     height: 100vh;
     margin: 0;
 }
@@ -19,25 +11,18 @@ body {
 
 .weAre {
     font-weight: 300;
-    margin: 0;
     color: hsl(0, 36%, 70%);
-    font-size: 60px;
 }
 
 .comingSoon {
-    font-size: 600;
-    margin: 0;
+    font-weight: 600;
     color: hsl(0, 6%, 24%);
-    font-size: 60px;
 }
 
 .texto {
-    font-size: 400;
+    font-weight: 400;
     color: hsl(0, 36%, 70%);
-    margin-top: 2rem;
-    margin-bottom: 2rem;
     line-height: 20px;
-
 }
 
 .btnEnviar {
@@ -59,10 +44,10 @@ body {
     width: max-content;
     
     flex-direction: column;
-        width: 100%;
-        height: 50px;
-        border-radius: 25px;
-        border: 1px solid hsl(0, 36%, 70%)
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid hsl(0, 36%, 70%)
 }
 
 .email {
@@ -104,7 +89,10 @@ body {
 @media (min-width: 1440px) and (orientation: landscape){
     .contenedor {
         display: flex;
-        height: 100vh;  
+        flex-direction: row;
+
+        height: 100vh;
+
         background-image: url(../images/bg-pattern-desktop.svg); 
         background-size: contain;
     }
@@ -129,6 +117,21 @@ body {
     .imgMujerMovil {
         display: none;
     }
+
+    .weAre {
+        margin: 0;
+        font-size: 64px;
+    }
+    
+    .comingSoon {
+        margin: 0;
+        font-size: 64px;
+    }
+
+    .texto {
+        margin-top: 2rem;
+        margin-bottom: 2rem; 
+    }    
 }
 
 @media (min-width: 375px) and (orientation: portrait) {
@@ -145,5 +148,38 @@ body {
     .imgMujerMovil {
         width: 100%;
         height: auto;
+    }
+
+    .weAre {
+        margin-top: 4rem;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .comingSoon {
+        font-size: 40px;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .logo {
+        margin: 2rem;
+        width: 25%;
+        height: auto;
+    }
+
+    .texto {
+        margin: 2rem;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .formulario {
+        width: 90%;
+        margin: auto;
+    }
+
+    .btnEnviar {
+        width: 65px;
     }
 }
