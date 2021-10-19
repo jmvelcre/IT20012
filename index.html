@@ -14,10 +14,11 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <div class="contenedor">
+  <div class="contenedor"> 
     <div class="fondo">
       <div class="info">
         <img class="logo" src="./images/logo.svg">
+        <img class="imgMujerMovil" src="./images/hero-mobile.jpg">
         <h1 class="weAre">
           W E ' R E
         </h1>
@@ -30,18 +31,21 @@
         <p class="texto">Hello fellow shoppers! We're currently building our new fashion store. 
         Add your email below to stay up-to-date with announcements and our launch deals.
         </p>
-        <form class="formulario">
-          <input type="email" placeholder="Email adress" class="email">
+        <form id="formEmail" class="formulario">
+          <input id="inputEmail" type="email" placeholder="Email adress" class="email">
           <div class="grupoBoton">
-            <img class="error" src="./images/icon-error.svg">
-            <button type="submit" class="btnEnviar">
+            <img id="imgError" class="error" src="./images/icon-error.svg">
+            <button id="btnEnviar" type="button" class="btnEnviar">
               <img src="./images/icon-arrow.svg">
             </button>
           </div>
         </form>
+        <p id="msgError" class="alerta">Please provide a valid email</p>
+
       </div>
     </div>
-    <img src="./images/hero-desktop.jpg" class="imgMujer">
+    <img src="./images/hero-desktop.jpg" class="imgMujerDesktop">
   </div>
+  <script src="./scripts/script.js"></script>
 </body>
 </html>
